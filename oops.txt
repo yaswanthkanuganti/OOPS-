@@ -1,0 +1,131 @@
+JDK: JDK stands for Java Development Kit. It is a software development environment used to develop Java applications. It includes the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (javadoc), and other tools needed for Java development.
+Example: For example, the kitchen contains all the tools and appliances we need to prepare meals. Likewise, JDK includes tools and libraries for writing Java code that contain JRE and JVM.
+
+JRE: JRE stands for Java Runtime Environment. It is a part of the Java Development Kit (JDK) and is used to run Java applications. It includes the Java Virtual Machine (JVM), the Java class libraries, which provide core functionalities like input/output, networking, collections, etc., and other supporting files needed to run Java programs
+Example: For example, the kitchen contains a cooking environment like a stove, utensils, etc. Likewise, the JRE provides an environment to run Java programs.
+
+JVM: JVM stands for Java Virtual Machine. It is the engine that runs Java bytecode. The JVM is part of the JRE. It takes the compiled .class files (bytecode) and converts them into machine code, and it provides important features like: Platform independence, Automatic memory management, and Security etc.
+Example: For example, the chef who interprets the recipes and prepares the meals. Likewise, the JVM interprets the bytecode and executes the compiled bytecode.
+
+JIT: JIT stands for Just-In-Time compiler. It is a part of the JVM (Java Virtual Machine) that compiles bytecode into native machine code at runtime, thereby improving the performance of Java applications by executing frequently used code more efficiently. This allows the program to execute more efficiently.
+Example: For example, the chef optimizes their operations by preparing popular dishes that are frequently ordered, reducing wait time, and improving efficiency.
+
+Class: A class is like a blueprint or template that defines the structure and behavior of objects. It contains variables and methods that describe what the object will have and what it can do. Classes are used to create objects in Java.
+Example: If there is a class called "car," it might have properties like color and speed, and methods like drive() or brake().
+
+Object: An object in Java is an instance of a class. It represents a real-world entity with its own state and behavior. Objects are created from classes, which act as blueprints.
+Example: The car is the class, and my Car is the object created from that class. The object can have its own brand values and can call the drive() method.
+
+String: In Java, a String is an object that represents a sequence of characters. It is not a primitive data type like int or char; instead, it is a class in the java. Lang package. Strings in Java are immutable, which means once a string is created, its value cannot be changed.
+Example: String message = "Hello, Java!"; creates a String object containing the text "Hello, Java!".
+String Pool:
+The String Pool is a special memory region inside the heap that stores string literals to avoid duplication.
+String Creation:
+There are two main ways to create a String:
+1.Using String Literal (stored in the String Pool):String s1 = "Java";
+If the same literal already exists in the pool, Java reuses the reference instead of creating a new object.
+2.Using new Keyword (stored in the Heap memory):String s2 = new String("Java"); 
+When you use new String("Java"), it creates a new object in the heap even if an identical string exists in the pool.
+
+StringBuilder in Java
+StringBuilder is a mutable, efficient class used for creating and modifying strings without creating new objects every time a change is made. It’s part of the java.lang package.
+
+StringBuffer in Java
+StringBuffer is a mutable, thread-safe class used to manipulate character strings. It is similar to StringBuilder but is synchronized, meaning it is safe to use in multi-threaded environments
+
+Common Methods
+append(String str):Adds string to the end
+insert(int offset, str):Inserts string at given index
+delete(int start, end):Deletes characters from start to end-1
+replace(start, end, str):Replaces characters from start to end-1
+reverse():Reverses the string
+length():Returns current length
+toString():Converts to a regular String
+
+substring() in Java – String Substring
+The **substring()** method in Java is used to extract a portion of a string. It's a commonly used method of the String class.
+
+Array: In java, Array is a collection of elements of same data type continuously stored in memory all are called by single name. Each element in the array is stored at a specific index, starting from 0.
+Example: For example, Mobile devices store contacts using arrays for quick access and manage contact names for searching, adding, or deleting them efficiently.
+
+Encapsulation:
+Encapsulation is a fundamental principle in Object-Oriented Programming (OOP). It involves wrapping data and methods into a single unit, usually a class, and restricting direct access to objects to protect them from unauthorized access or modification. This is achieved by making class variables private and providing public getter and setter methods to access and update those variables.
+Example: The Student class uses encapsulation to protect private variables like name and age, preventing direct access from outside the class.  Public getter and setter methods are used to update and access these private variables, which helps to ensure data protection and object validity.
+
+Polymorphism:		
+Polymorphism in Java allows one method to behave in different ways. It can be achieved through method overloading (compile-time) and method overriding (run-time). This makes the code more flexible and easier to maintain. It is one of the key principles of Object-Oriented Programming (OOP).
+
+Method Overloading(Compile-time Polymorphism): Method Overloading means having multiple methods with the same name in the same class, but with different parameter types. It is a form of compile-time polymorphism because the compiler decides which method to call based on the method signature during compilation.
+Example: The example demonstrates method overloading in a Printer class, where three print methods with the same name but different parameters are called based on the number and type of arguments.
+
+Method Overriding (Run-time Polymorphism): Method Overriding means that a subclass provides its own implementation of a method that is already defined in its superclass. It is a form of run-time polymorphism, at runtime, which method to execute based on the actual object type, not the reference type.
+Example: The Animal class has a method called sound(), which is overridden by Dog and Cat subclasses. The JVM decides which version to execute based on the object type.
+
+Inheritance:
+Inheritance in Java means that one class (called a subclass or child class) can inherit the features (fields and methods) of another class (called a superclass or parent class).
+This promotes code reusability, making programs easier to manage, extend, and maintain.
+Example: The Employee class extends the Person class. That means it inherits the variable's name, age, and the method Address from the parent class. Additionally, it has its own method.
+
+Abstraction:
+Abstraction in Java is an Object-Oriented Programming (OOP) concept that focuses on hiding internal implementation details and exposing only the essential features of an object. It helps reduce complexity and allows developers to focus on what an object does, rather than how it does it.
+Example: You drive a car 🚗 without worrying about how the engine works internally. You just use the steering wheel, accelerator, and brakes—the details of how they work are hidden from you. This is called abstraction!
+
+Interface:
+An interface in Java is like a contract that defines a set of methods without their implementation. Classes that implement the interface must provide the method bodies. Since Java 8, interfaces can also have default and static methods with implementations. Interfaces help achieve abstraction and allow a class to inherit from multiple types, supporting multiple inheritance."
+Example: The Payment interface establishes a contract with the pay() method, which is implemented by payment methods like Credit Card Payment and PayPal Payment, enabling different payment processing methods to follow the same contract, promoting code abstraction and flexibility.
+
+What is an Exception in Java?
+An exception is an event that disrupts the normal flow of a program’s execution. It occurs during runtime and can be handled using Java’s exception handling mechanism.
+
+Types of Exceptions in Java
+
+1. Checked Exceptions (Compile-Time Exceptions)
+Handled at compile-time.
+The compiler checks if the exception is either caught or declared using the throws keyword.
+These usually occur due to external factors like file operations, database access, etc.
+Example: IO Exception, ClassNotFound Exception.
+
+2. Unchecked Exceptions (Runtime Exceptions)
+Handled at runtime.
+Subclasses of RuntimeException.
+These are mostly programming errors (null references, bad casting, etc.).
+The compiler does not force you to catch or declare them.
+Examples: NullPointerException, ArithmeticException
+
+3. Errors
+Subclasses of Error.
+In Java, an Error is a serious problem that occurs during the execution of a program and is not meant to be caught or handled by typical Java application code.
+Examples: OutOfMemoryError, StackOverflowError
+
+What are try-catch blocks?
+The try block contains code that might throw an exception. The catch block handles the exception. You can have multiple catch blocks to handle different exceptions.
+
+ What is the use of finally block?
+The finally block is used to execute code that must run regardless of whether an exception was thrown or not, such as releasing resources like files or database connections.
+
+What is a Custom Exception?
+A custom exception is a user-defined exception that extends the built-in Exception class (for checked exceptions) or RuntimeException class (for unchecked exceptions).
+
+Why Create Custom Exceptions?
+To represent domain-specific errors (e.g., InvalidUserException, InsufficientFundsException)
+To improve code readability and error handling clarity
+To allow fine-grained exception control
+
+What is exception handling in Java?
+Exception handling in Java is a mechanism that allows developers to handle runtime errors, so the normal flow of the application can be maintained. It uses a set of keywords like try, catch, finally, throw, and throws.
+
+Explain the Java exception hierarchy.
+Throwable is the superclass of all errors and exceptions.
+Error (e.g., OutOfMemoryError, StackOverflowError) – indicates serious problems that a reasonable application shouldn't try to handle.
+Exception – conditions that a program might want to catch.
+Checked exceptions (e.g., IOException, SQLException) – must be either caught or declared using throws.
+Unchecked exceptions (subclass of RuntimeException, e.g., NullPointerException, ArrayIndexOutOfBoundsException) – don’t need to be declared or caught.
+
+Custom exception – how do you create one?
+You can create custom exceptions by extending Exception or RuntimeException.
+
+throw in Java
+The **throw** keyword in Java is used to explicitly throw an exception from our code. It gives you control to signal that something went wrong in a method or block of code.
+
+throws in Java
+The **throws** keyword in Java is used to declare exceptions that a method might throw.
