@@ -132,3 +132,7 @@ The **throws** keyword in Java is used to declare exceptions that a method might
 
 What is exception handling in Java?
 Exception handling in Java is a mechanism that allows developers to handle runtime errors, so the normal flow of the application can be maintained. It uses a set of keywords like try, catch, finally, throw, and throws.
+
+What are try-catch blocks?
+The try block contains code that might throw an exception. The catch block handles the exception. You can have multiple catch blocks to handle different exceptions.
+
